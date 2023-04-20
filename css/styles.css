@@ -63,8 +63,6 @@ button  {
 /* HEADER*/
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid;
     border-color: #E7E9FC;
 }
@@ -103,8 +101,12 @@ button  {
     align-items: center;
 }
 
+.menu-item {
+    padding: 24px 0 24px;
+}
+
 .menu-item:not(:last-child) {
-    margin-right:40px;
+    margin: 40px;
 }
 .menu-link {
     font-weight: 500;
@@ -129,7 +131,7 @@ button  {
 }
 
 .email{
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .address-list {
@@ -142,6 +144,8 @@ button  {
 
 .hero {
     background-color: #2e2f42;
+    padding-top: 188px 0;
+    padding-bottom: 48px;
 }
 
 .hero-title {
@@ -151,8 +155,8 @@ button  {
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 188px;
-    padding-bottom: 48px;
+    max-width: 496px;
+
 }
 
 .hero-button {
@@ -165,6 +169,11 @@ button  {
     letter-spacing: 0.04em;
     text-align: center;
     color: #FFFFFF;
+    border:none;
+    height: 56px;
+    display: block;
+    min-width: 169px;
+    border-radius: 4px;
 }
 
 
@@ -182,21 +191,20 @@ button  {
     margin: -1px;
     border: 0;
     padding: 0;
-    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
 
-.tasks {
-    padding-top: 120px;
-}
-
-.tasks-descr {
+ .tasks-descr {
     display: flex;
     gap: 24px;
-    flex-basis: calc((100%-72px)/4);
+  }
+
+
+.task-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .bar-name {
@@ -231,25 +239,29 @@ button  {
 
 .team-members {
     background-color:#F4F4FD;
+    border-radius: 0px 0px 4px 4px; 
 
 }
 
 .employee-card {
     background-color: #ffff;
-    padding-top: 32px;
-    padding-bottom: 32px;
     text-align: center;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
+    padding: 32px 16px;
+}  
 
 
 /*FOOTER*/
 
-
+.footer-btn {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-info {
@@ -257,11 +269,6 @@ button  {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:  #F4F4FD;
-}
-
-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 
