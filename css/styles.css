@@ -1,7 +1,7 @@
 :root {
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;    
-    --border-deco: #e7e9fc;
+    --border-color:#e7e9fc;
 }
 
 body {
@@ -64,7 +64,8 @@ button  {
 /* HEADER*/
 
 .header {
-    border: var(--border-deco);
+    border-bottom: 1px solid;
+    border-color: #e7e9fc;
 }
 
 .header-container {
@@ -102,9 +103,6 @@ button  {
     gap: 40px;
 }
 
-.menu-item {
-    padding: 24px 0 24px;
-}
 
 .menu-link {
     font-weight: 500;
@@ -118,18 +116,20 @@ button  {
 .menu-link:focus {
     color: #404BBF;
 }
+
+.menu-item{
+    padding: 24px 0;
+}
+
  .list-contact {
     display: flex;
+    gap: 40px;
  }
 
 .address {
     font-style: normal;
     color: #434455;
     margin-left: auto;
-}
-
-.email{
-    margin-right: 40px;
 }
 
 .address-list {
@@ -289,7 +289,7 @@ button  {
     color: #4D5AE5;
     background: #F4F4FD;
     padding: 12px 24px;
-    border: var(--border-deco);
+    border:1px solid #e7e9fc;
     border-radius: 4px; 
 
 }
@@ -320,6 +320,6 @@ button  {
     background-color: #ffff;
     padding: 32px 16px;
     gap: 8px;
-    border:var(--border-deco);
+    border: 1px solid #e7e9fc;
     border-top: none; 
 }
