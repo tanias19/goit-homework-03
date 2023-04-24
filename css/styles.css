@@ -102,7 +102,6 @@ button  {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0;
 }
 
 
@@ -117,6 +116,10 @@ button  {
 .menu-link:hover,
 .menu-link:focus {
     color: #404BBF;
+}
+
+.menu-item {
+    padding: 24px 0;
 }
 
  .list-contact {
